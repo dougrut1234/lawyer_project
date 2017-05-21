@@ -1,0 +1,15 @@
+<p id="our_lawyers">OUR LAWYERS</p>
+
+
+<% @lawyers.each do |lawyer| %>
+
+<div id="lawyer_border">
+	<div id="move_pic"><%= image_tag lawyer.avatar(:medium) %></div>
+	<div id ="float">
+	<p>
+	<b><%= lawyer.first_name %> <%= lawyer.last_name%></b><br>
+	<%= lawyer.name_of_firm %><br>
+	</p>
+	</div>
+	</div>
+<% end %>

@@ -1,0 +1,30 @@
+<b><p id="title">Law School</p></b>
+
+<div id="margin">
+
+
+	<h1>Core Courses</h1>
+
+
+	<% @courses.each do |course| %>
+
+	<h2>
+		<%= link_to(course.course_name, course_path(course.id))%>
+	</h2>
+
+	<% end %> 
+
+
+	<h2 id="lawyer">
+		<i><%= link_to("Our Lawyers", "/courses/new")%></i><br>
+	</h2>
+	<h2>
+		<i><%= link_to("Lawyer Login", "/courses/new")%></i><br>
+	</h2>
+	<h2>
+		<i><%= link_to("Lawyer Sign Up", "/courses/new")%></i><br>
+	</h2>
+	</h2>
+</div>
+
+<%=image_tag "shirt.png", id: "shirt" %> 

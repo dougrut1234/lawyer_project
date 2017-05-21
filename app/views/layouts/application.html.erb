@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+
+<%=image_tag "Toon_In_Logo.jpg", id: "logo" %> 
+<p id="tagline">Look. Learn. Laugh!</p>
+  <head>
+    <title>LawProject</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
+</html>

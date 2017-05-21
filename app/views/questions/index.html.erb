@@ -1,0 +1,9 @@
+<% @questions.each do |question| %>
+
+<%= question.question %>
+<%= question.answer %>
+
+<% end %>
+
+<p><%= link_to("Add A Question", new_course_question_path) %></p>
+

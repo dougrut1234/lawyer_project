@@ -1,0 +1,14 @@
+<h1>Add Course</h1>
+<!-- This CREATES the user...since Create corresponds to NEW -->
+
+<p>
+<%= form_for @course do |form| %>   
+<%= form.label :course_name %>: 
+<%= form.text_field :course_name %>  
+</p>
+
+<%= form.submit "Add Course" %>
+
+<% end %>
+
+
