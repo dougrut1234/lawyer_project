@@ -6,6 +6,8 @@ class QuestionsController < ApplicationController
 
 	def new
 		@question = Question.new
+		@course = Course.find(params[:course_id])
+		@question.course_id = params[:course_id]
 	end
 
 	def show
@@ -13,11 +15,12 @@ class QuestionsController < ApplicationController
 	end
 
 	def create
+		@course = Course.find(params[:course_id])
 		@question = Question.new(question_params)
 		if @question.save!
 			redirect_to course_questions_path
 		else
-			# render '/courses/'
+			render '/courses/'
 		end
 	end
 

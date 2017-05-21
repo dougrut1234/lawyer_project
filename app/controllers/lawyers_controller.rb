@@ -2,6 +2,7 @@ class LawyersController < ApplicationController
 	
 	def index
 		@lawyers = Lawyer.all
+		@t = Time.now.strftime("%D")
 	end
 
 	def new

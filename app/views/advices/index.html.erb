@@ -1,0 +1,32 @@
+<p id="advice">If you are reading this and currently attending law school, congratulations! You have a long and tough journey ahead of you. There will be sweat. There will be tears. These three years is going to be a real grind and this page will give you the best advice from both students crawling towards the finish line to experience attorneys who went through those tough battles. Whether you seek advice, maybe a little story, or just need some humor to hold your head up high, seek no further!</p>
+<i><p id="advice_message">Student? Attorney? Professor? Have something encouraging you would want to share? Send us your name, school or firm, and your content, and we'll post it here!</p></i>
+<hr></hr>
+
+<% @advices.each do |advice| %>
+
+<div id="advice_center">
+	<i><p id="advice_align">
+	"<%=advice.advice%>"
+	</p></i>
+	<b><p id="author_align">
+	<%=advice.author%></p></b>
+	</p>
+	<p id="author_align">
+	<%=advice.education%>
+	</p>
+	<p id="author_align">
+	<%=advice.firm%>
+	<p id="author_align">
+	<%=@t%> 
+<div id="float_button">	
+	<p id="delete_advice_button1"><%= link_to("Delete", advice_path(advice), method: :delete) %></p> <p id="delete_advice_button2"><%= link_to("Edit", edit_advice_path(advice)) %></p>
+</div>
+
+	</p>
+	</p>
+</div>
+<hr></hr>
+
+<% end %>
+
+<p id="advice_button"><%= link_to("Add Advice", "/advices/new") %></p>

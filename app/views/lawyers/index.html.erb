@@ -4,7 +4,7 @@
 <% @lawyers.each do |lawyer| %>
 
 <div id="lawyer_border">
-	<div id="move_pic"><%= image_tag lawyer.avatar(:medium) %></div>
+	<div id="move_pic"><%= image_tag lawyer.avatar(:thumb) %></div>
 	<div id ="float">
 	<p>
 	<b><%= lawyer.first_name %> <%= lawyer.last_name%></b><br>
@@ -13,3 +13,4 @@
 	</div>
 	</div>
 <% end %>
+

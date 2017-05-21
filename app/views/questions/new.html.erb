@@ -1,4 +1,4 @@
-<%= form_for @question do |form| %>
+<%= form_for (@question.course, @course) do |form| %>
 
 	<%= form.label :question%>
     <%= form.text_field :question %>

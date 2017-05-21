@@ -39,7 +39,28 @@ h2:hover {
 	width: 600px;
 	height: auto;
 	margin-left: 175px;
+	position: absolute;
+	z-index: -1;
 }
+
+#shirt:hover {
+	-webkit-animation: rotate 4s forwards;
+    animation: rotate 4s forwards;
+}
+
+
+  
+@-webkit-keyframes rotate {
+    100% {
+        -webkit-transform: rotate(35deg);
+    }
+}
+@keyframes rotate {
+    100% {
+        transform: rotate(35deg);
+    }
+}
+
 
 #lawyer {
 	background-color: #8A0808;
@@ -54,6 +75,7 @@ h2:hover {
 	
 	border-width: 3px;
 	padding: 5px;
+	margin-top: -20px;
 
 }
 
@@ -69,13 +91,13 @@ h2:hover {
 
 #title {
 	margin-top: -40px;
-	margin-left: 1010px;
+	margin-left: 1055px;
 	font-size: 36px;
 	text-decoration: underline;
 }
 
 #chapter {
-	margin-left: 1020px;
+	margin-left: 1070px;
 	font-size: 36px;
 	margin-top: -40px;
 }
@@ -88,6 +110,10 @@ h2:hover {
 	padding: 10px; 
 	color: white;
 	font-weight: bold;
+}
+
+#list:hover {
+	background-color: grey;
 }
 
 #margin_for_chapters {
@@ -116,16 +142,18 @@ h2:hover {
 	font-size: 24px;
 	margin-top: 525px;
 	margin-right: -340px;
-	padding-left: 40px;
-	padding-right: 40px;
+	padding-left: 14px;
+	padding-right: 14px;
 	border-style: solid;
 	border-weight: 3px;
 }
 
 #default {
-	margin-top: 50px;
+	margin-top: -20px;
 	width: 750px;
 	height: auto;
 	margin-left: 100px;
 	padding-bottom: 100px;
 }
+
+

@@ -5,6 +5,8 @@ Rails.application.routes.draw do
 
 	resources :lawyers
 
+	resources :advices
+
 	resources :courses do
 
 		resources :questions

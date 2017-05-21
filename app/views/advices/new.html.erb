@@ -1,0 +1,33 @@
+<p id="our_lawyers">Advice</p>
+<!-- This CREATES the user...since Create corresponds to NEW -->
+
+<div id="advice_form">
+<p>
+<%= form_for @advice do |form| %>   
+<b><%= form.label :advice %></b><p> 
+<%= form.text_area :advice %>  
+</p>
+</p>
+<p>
+<%= form.label :author %>: 
+<%= form.text_field :author %> 
+</p>
+<p>
+<%= form.label :education %>: 
+<%= form.text_field :education %> 
+</p>
+<p>
+<%= form.label :firm %>: 
+<%= form.text_field :firm %> 
+</p>
+
+<%=@t %>
+
+
+
+<%= form.submit "Add" %>
+</div>
+
+<% end %>
+
+
