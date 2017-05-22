@@ -17,6 +17,7 @@ class AdvicesController < ApplicationController
 		@advice = Advice.new(advice_params)
 		@t = Time.now.strftime("%D")
 		if @advice.save!
+			flash[:notice] = "Thank you for your post. We hope your words will enlighten busy law students everywhere!"
 			redirect_to "/advices/"
 		else
 			render 'new'

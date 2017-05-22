@@ -1,9 +1,73 @@
-<% @questions.each do |question| %>
+<p id="our_lawyers">TORT QUIZ</p>
 
-<%= question.question %>
-<%= question.answer %>
+<u><h3 id="question_number">1</h3></u>
+<h3 id="question_index">Andy is training to be the ultimate heavyweight fighter of the world. During practice, he tells his trainer to hit him multiple times. The trainer hits him once and breaks Andy’s nose. Why can’t Andy sue for battery, which is intentional harm to another?</h3>
 
-<% end %>
+	<p id="answer_index" onclick="myFunction()">Click For Answer.</p>
 
-<p><%= link_to("Add A Question", new_course_question_path) %></p>
+	<script>
+	function myFunction() {
+	    document.getElementById("answer_index").innerHTML = "The trainer IS NOT LIABLE, because Andy assumed the risk and gave him consent to hit him; thus it is not battery.";
+	}
+	</script>
+
+<hr></hr>
+
+
+<u><h3 id="question_number">2</h3></u>
+<h3 id="question_index">It’s Halloween! Coming home from trick-or-treating, Andy is pursued by a crazy man with a jack-o’-lantern for a head, carrying an axe. Is the man committing “battery” or “assault’? And why?</h3>
+
+	<p id="answer_index2" onclick="myFunction2()">Click For Answer.</p>
+
+	<script>
+	function myFunction2() {
+	    document.getElementById("answer_index2").innerHTML = "It’s ASSAULT, NOT BATTERY. Battery requires actual harm while assault can be “threatening to harm.";
+	}
+	</script>
+
+<hr></hr>
+
+<u><h3 id="question_number">3</h3></u>
+<h3 id="question_index">Andy wants to pet the wild boars owned by Farmer Dole. He walks to the secured gate, and he releases the lock. Unsurprisingly, the boars chase him across the field and attack him. Is Farmer Dole liable for Andy’s injuries?</h3>
+
+	<p id="answer_index3" onclick="myFunction3()">Click For Answer.</p>
+
+	<script>
+	function myFunction3() {
+	    document.getElementById("answer_index3").innerHTML = "Farmer Dole IS LIABLE for Andy’s injuries even though the cage is locked and secure. Farmer Dole can be sued under STRICT LIABILITY as wild animals are inherently dangerous, and Farmer Dole is still at fault no matter how much care is taken.";
+	}
+	</script>
+
+<hr></hr>
+
+<u><h3 id="question_number">4</h3></u>
+<h3 id="question_index">Andy, an employee of Fackina’s Flowers, is delivering some flowers when he found out that he has twenty minutes to kill. He could use some ice cream. He decides to drive a few miles in the other direction to the nearest ice cream store. On the way, he rear-ends another vehicle. Is he liable? If so, what does it fall under?</h3>
+
+
+	<p id="answer_index4" onclick="myFunction4()">Click For Answer.</p>
+	
+	<script>
+		function myFunction4() {
+		    document.getElementById("answer_index4").innerHTML = "Andy IS LIABLE because he took a substantial route away from his work. This falls under the category of “FROLIC” related to vicarious liability.";
+		}
+		</script>
+
+<hr></hr>
+
+
+<u><h3 id="question_number">5</h3></u>
+<h3 id="question_index">Mr. Stephenson hires Wayne, a private contractor, to help fix the roof of a shed. Wayne falls off the ladder and breaks his ankle. Is Mr. Stephenson liable for the injury? Why or why not?</h3>
+
+	<p id="answer_index5" onclick="myFunction5()">Click For Answer.</p>
+		
+		<script>
+			function myFunction5() {
+			    document.getElementById("answer_index5").innerHTML = "Mr. Stephenson IS NOT LIABLE, because Wayne is an independent contractor and not an employee. Wayne, as an independent contractor, is liable for his own damages as he is in control of his work, unlike that of an employee.";
+			}
+			</script>
+
+<hr></hr>
+
+<div id="question_index_padding"></div>
+
 

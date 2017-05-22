@@ -41,10 +41,13 @@ hr {
 
 #advice_button {
 	font-color: black;
+	font-size: 11px;
 	background-color: #8A0808;
 	float: right;
 	padding: 5px;
-	margin-right: 20px;
+	margin-right: 5px;
+	border-radius: 25px;
+	margin-top: -40px;
 }
 
 #advice_button:hover {
@@ -56,8 +59,9 @@ hr {
 	font-size: 14px;
 	padding: 5px;
 	display: inline-block;
-	margin-left: 1320px;
+	margin-left: 1305px;
 	margin-top: -20px;
+	border-radius: 25px;
 
 }
 
@@ -65,22 +69,23 @@ hr {
 	background-color: #8A0808;
 	font-size: 14px;
 	padding: 5px;
-	padding-right: 15px;
+	padding-right: 11px;
 	padding-left: 9px;
 	display: inline-block;
 	margin-left: 10px;
 	margin-top: -45px;
 	text-align: center;
 	float: left;
+	border-radius: 25px;
 
 }
 
 #delete_advice_button1:hover {
-	background-color: blue
+	background-color: gray;
 }
 
 #delete_advice_button2:hover {
-	background-color: blue
+	background-color: gray;
 }
 
 #our_lawyers {
@@ -104,6 +109,19 @@ hr {
 	padding-left: 9px;
 	margin-bottom: -100px;
 	display: inline-block;
+	margin-left: 1175px;
+	border-radius: 25px;
+	float: left
+}
+
+#navigation_links2 {
+	background-color: #8A0808;
+	font-size: 14px;
+	padding: 5px;
+	padding-right: 9px;
+	padding-left: 9px;
+	margin-bottom: -100px;
+	display: inline-block;
 	margin-left: 1250px;
 	border-radius: 25px;
 }
@@ -114,4 +132,23 @@ hr {
 	margin-right: 150px;
 	line-height: 25px;
 	margin-top: -20px;
+	margin-bottom: 60px;
+
+}
+
+#advice_center {
+	background-color: #FCF3CF;
+	padding-top: 20px;
+}
+
+#add_advice_button {
+	font-color: black;
+}
+
+#padding_bottom {
+	padding-bottom: 120px;
+}
+
+#report_button {
+	float: right;
 }
