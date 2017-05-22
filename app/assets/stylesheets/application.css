@@ -14,8 +14,6 @@
  *= require_self
  */
 
-
-
 #notice {
   background-color: green;
   color: white;
@@ -29,3 +27,14 @@
   padding: 10px;
   border-radius: 2px;
 }
+
+#color {
+	font-color: green;
+	font-family: 24px;
+}
+
+.color {
+	font-color: green;
+	font-family: 24px;
+}
+/* Modal Content (Image) */
