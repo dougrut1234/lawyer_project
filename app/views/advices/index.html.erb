@@ -19,7 +19,7 @@
 	<p id="author_align">
 	<%=@t%> 
 <div id="float_button">	
-	<p id="delete_advice_button1"><%= link_to("Delete", advice_path(advice), method: :delete) %></p> <p id="delete_advice_button2"><%= link_to("Edit", edit_advice_path(advice)) %></p>
+	<p id="delete_advice_button1"><%= link_to("Report", report_advice_path(advice.id), :remote => true) %></p> <p id="delete_advice_button2"><%= link_to("Edit", edit_advice_path(advice)) %></p>
 </div>
 
 	</p>
