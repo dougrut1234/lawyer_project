@@ -16,6 +16,7 @@ class CoursesController < ApplicationController
 	def create
 		@course = Course.new(course_params)
 		if @course.save!
+			flash[:notice] = "Course has been added."
 			redirect_to "/"
 		else
 			render 'new'
@@ -30,7 +31,6 @@ class CoursesController < ApplicationController
     	@course = Course.find(params[:id])
     	@course.course_name = params[:lawyer][:course_name]
       		if @course.save
-      			flash[:notice] = "Lawyer has been added."
       			redirect_to course_path
     		end
   end

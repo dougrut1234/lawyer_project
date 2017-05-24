@@ -16,6 +16,7 @@ class LawyersController < ApplicationController
 	def create
 		@lawyer = Lawyer.new(lawyer_params)
 		if @lawyer.save!
+			flash[:notice] = "Lawyer has been saved."
 			redirect_to "/lawyers/"
 		else
 			render 'new'
@@ -32,7 +33,6 @@ class LawyersController < ApplicationController
     	@lawyer.last_name = params[:lawyer][:last_name]
     	@lawyer.name_of_firm = params[:lawyer][:name_of_firm]
       		if @lawyer.save
-      			flash[:notice] = "Lawyer has been saved."
       			redirect_to lawyer_path
     		end
   end

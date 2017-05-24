@@ -127,8 +127,25 @@ hr {
 	padding-left: 9px;
 	margin-bottom: -100px;
 	display: inline-block;
-	margin-left: 1250px;
+	margin-left: 1230px;
+	margin-right: 60px;
 	border-radius: 25px;
+	margin-top: 20px;
+	float: right;
+}
+
+#about {
+	background-color: #8A0808;
+	font-size: 14px;
+	padding: 5px;
+	padding-right: 9px;
+	padding-left: 9px;
+	margin-bottom: -100px;
+	display: inline-block;
+	margin-left: 1150px;
+	margin-top: 20px;
+	border-radius: 25px;
+	color: white;
 }
 
 #advice_message {

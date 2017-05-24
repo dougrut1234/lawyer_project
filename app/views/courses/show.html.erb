@@ -1,5 +1,10 @@
 <b><p id="chapter">TORT LAW</p></b>
 
+<div id="default_pic">
+
+
+</div>
+
 
 <div id="margin_for_chapters">
 
@@ -28,6 +33,7 @@
 
 </div>
 
+<%=image_tag "000047.jpg", id: "default_picture" %>
 
 
 <%= link_to("TORT QUIZ", course_questions_path(@course.id), :id => "bottom_button1")%>
@@ -139,6 +145,7 @@
 		    introduction.style.display = "block";
 		    intentional_torts.style.display = "none";
 		    unintentional_torts.style.display = "none";
+		    default_picture.style.display = "none";
 	}
 
 </script>
@@ -240,7 +247,9 @@
 
 	list2.onclick = function() {
 		    intentional_torts.style.display = "block";
-		    introduction.style.display = "none"
+		    introduction.style.display = "none";
+		    default_picture.style.display = "none";
+		    unintentional_torts.style.display = "none";
 	}
 
 </script>
@@ -342,7 +351,8 @@
 	list3.onclick = function() {
 			unintentional_torts.style.display = "block";
 		    intentional_torts.style.display = "none";
-		    introduction.style.display = "none"
+		    introduction.style.display = "none";
+		    default_picture.style.display = "none";
 	}
 
 </script>

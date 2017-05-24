@@ -28,4 +28,28 @@
 
 <div id="padding_bottom"></div>
 
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p id="modal_stuff">Just a few important things to know before we get to the good stuff!</p>
+  </div>
+
+</div>
+
+<script>
+
+	var modal = document.getElementById('myModal');
+
+	chapter_title.onclick = function() {
+	    modal.style.display = "block";
+	}
+
+	chapter_title.onmouseleave = function() {
+	    modal.style.display = "none";
+	}
+
+</script>
+
 

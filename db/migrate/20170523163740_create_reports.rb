@@ -3,6 +3,7 @@ class CreateReports < ActiveRecord::Migration[5.0]
     create_table :reports do |t|
     	t.integer :report_id
     	t.integer :advice_id
+    	t.string :advice
       t.timestamps
     end
   end

@@ -70,6 +70,7 @@ ActiveRecord::Schema.define(version: 20170523163740) do
   create_table "reports", force: :cascade do |t|
     t.integer  "report_id"
     t.integer  "advice_id"
+    t.string   "advice"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
