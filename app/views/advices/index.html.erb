@@ -6,7 +6,7 @@
 
 <div id="advice_center">
 	<i><p id="advice_align">
-	"<%=advice.advice%>"
+	"<%=advice.text%>"
 	</p></i>
 	<b><p id="author_align">
 	<%=advice.author%></p></b>
@@ -16,8 +16,10 @@
 	</p>
 	<p id="author_align">
 	<%=advice.firm%>
+	</p>
 	<p id="author_align">
-	<%=@t%> 
+	<%=advice.created_at.strftime("%m-%d-%y")%>
+	</p>
 <div id="float_button">	
 <div id ="flag"></div>
 	<p id="delete_advice_button1"><%= link_to("Report", report_advice_path(advice.id)) %></p> <p id="delete_advice_button2"><%= link_to("Edit", edit_advice_path(advice)) %></p>

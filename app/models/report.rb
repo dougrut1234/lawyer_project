@@ -1,3 +1,3 @@
 class Report < ApplicationRecord
-	has_many :advices
+	belongs_to :advice, optional: true
 end

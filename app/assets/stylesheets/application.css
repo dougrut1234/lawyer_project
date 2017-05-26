@@ -38,3 +38,52 @@
 	font-family: 24px;
 }
 /* Modal Content (Image) */
+#shirt2 {
+  margin-top: 400px;
+  height: 400px;
+  width: auto;
+  margin-right: 200px;
+  margin-left: -700px;
+  padding-bottom: 100px;
+  position: absolute;
+  z-index: -1;
+  border-style: solid;
+  border-color: black;
+}
+
+#shirt3 {
+  margin-top: 400px;
+  height: 400px;
+  margin-right: 500px;
+  margin-left: -200px;
+  padding-bottom: 100px;
+  width: auto;
+  position: absolute;
+  z-index: -1;
+  border-style: solid;
+  border-color: black;
+}
+
+#shirt2:hover {
+  background-color: #8A0808;;
+}
+
+#shirt3:hover {
+  background-color: #8A0808;;
+}
+
+
+#signup {
+  margin-top: -80px;
+  margin-left: 900px;
+  font-size: 36px;
+  display: none;
+}
+
+#login {
+  margin-left: 265px;
+  margin-top: -80px;
+  font-size: 36px;
+  display: none;
+
+}

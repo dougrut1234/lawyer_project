@@ -41,7 +41,7 @@
 <head>
 <style>
 /* The Modal (background) */
-.modal2 {
+.modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
@@ -54,9 +54,8 @@
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
-
 /* Modal Content */
-.modal-content2 {
+.modal-content {
     position: relative;
     background-color: #fefefe;
     margin: auto;
@@ -69,47 +68,39 @@
     animation-name: animatetop;
     animation-duration: 0.4s
 }
-
 /* Add Animation */
 @-webkit-keyframes animatetop {
     from {top:-300px; opacity:0} 
     to {top:0; opacity:1}
 }
-
 @keyframes animatetop {
     from {top:-300px; opacity:0}
     to {top:0; opacity:1}
 }
-
 /* The Close Button */
-.close2 {
+.close {
     color: white;
     float: right;
     font-size: 28px;
     font-weight: bold;
 }
-
-.close2:hover,
-.close2:focus {
+.close:hover,
+.close:focus {
     color: #000;
     text-decoration: none;
     cursor: pointer;
 }
-
-.modal-header2 {
+.modal-header {
     padding: 2px 16px;
     background-color: #8A0808;
     color: white;
 }
-
-.modal-body2 {padding: 2px 16px;}
-
-.modal-footer2 {
+.modal-body {padding: 2px 16px;}
+.modal-footer {
     padding: 2px 16px;
     background-color: #8A0808;
     color: white;
 }
-
 #about_text {
     font-size: 16px;
     line-height: 40px;
@@ -120,55 +111,43 @@
 
 
 <!-- Trigger/Open The Modal -->
-<button id="about">About Us</button>
 
 <!-- The Modal -->
-<div id="myModal2" class="modal2">
+<div id="myModal" class="modal">
 
   <!-- Modal content -->
-  <div class="modal-content2">
-    <div class="modal-header2">
-      <span class="close2">&times;</span>
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
       <h2>Toon In! Books</h2>
     </div>
-    <div class="modal-body2">
+    <div class="modal-body">
       <p id="about_text">Let's face it guys and gals. Law school is a real chore. You will be studying more than you sleep. You definitely won't have enough time for your friends or significant other. However, if you can make it through your first year...you can make it through your final two years. Yeah, yeah, you hear everything about law school. The books. The texts. The lectures (hopefully not a boring one)...but one thing is a guarantee is the reading. You will be reading a lot and for better or worse thee are NOT fun books. Toon In series hope to change that. Starting with Legal Toons, these books provide not only fun humor books for your education, but it simplifies the material. You WILL be taking a class in the books we provide. Therefore, only way to go is up! And laugh in the process of course.</p>
       <p>Look. Learn. Laugh!</p>
     </div>
-    <div class="modal-footer2">
+    <div class="modal-footer">
     </div>
   </div>
 
 </div>
 
 <script>
-
-var modal2 = document.getElementById('myModal2');
-
-
+var modal = document.getElementById('myModal');
 var about = document.getElementById("about");
-
-
-var span = document.getElementsByClassName("close2")[0];
-
+var span = document.getElementsByClassName("close")[0];
 about.onclick = function() {
-    modal2.style.display = "block";
+    modal.style.display = "block";
 }
-
-
 span.onclick = function() {
-    modal2.style.display = "none";
+    modal.style.display = "none";
 }
-
 window.onclick = function(event) {
     if (event.target == modal) {
-        modal2.style.display = "none";
+        modal.style.display = "none";
     }
 }
 </script>
 
 </body>
 </html>
-
-
 

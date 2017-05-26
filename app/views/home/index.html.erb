@@ -1,1 +1,28 @@
-<p>Hello World</p>
+<%=link_to(image_tag("shirt.png", id: "shirt2"), "/users/login/")%>
+<%=link_to(image_tag("signup.jpg", id: "shirt3"), "/users/sign-up/")%> 
+<div id="padding_bottom"></div>
+
+<h3 id="signup">Sign Up!</h3>
+<h3 id="login">Log In!</h3>
+
+<script>
+	var signup_message = document.getElementById('signup');
+
+	shirt3.onmouseenter = function() {
+	    signup_message.style.display = "block";
+	}
+	shirt3.onmouseleave = function() {
+	    signup_message.style.display = "none";
+	}
+</script>
+
+ <script>
+	var login_message = document.getElementById('login');
+
+	shirt2.onmouseenter = function() {
+	    login_message.style.display = "block";
+	}
+	shirt2.onmouseleave = function() {
+	    login_message.style.display = "none";
+	}
+</script>

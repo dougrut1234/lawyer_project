@@ -1,3 +1,3 @@
 class Advice < ApplicationRecord
-	belongs_to :report
+	belongs_to :report, optional: true
 end

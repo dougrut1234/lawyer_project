@@ -29,7 +29,7 @@ class AdvicesController < ApplicationController
 
   	def update
     	@advice = Advice.find(params[:id])
-    	@advice.advice = params[:advice][:advice]
+    	@advice.advice = params[:advice][:text]
     	@advice.education = params[:advice][:education]
     	@advice.firm = params[:advice][:firm]
       		if @advice.save
@@ -47,7 +47,7 @@ class AdvicesController < ApplicationController
 	private
     
     def advice_params
-      params.require(:advice).permit(:advice, :author, :education, :firm)
+      params.require(:advice).permit(:text, :author, :education, :firm)
     end
 
 end
