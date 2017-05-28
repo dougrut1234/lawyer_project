@@ -1,17 +1,19 @@
 
+<p id="advice">Quiz time! Just a very SMALL sample of what you'll read in the LSAT. You're going to have to be on fire with your answers. By that, you should be able to answer quickly and on your feet. Like most things in life you will be under a time crunch and this quiz is a good place to start. You'll learn to process and interpret information quickly and with that newly developed skill you'll able to succeed in the highly pressured environment of a working attorney.</p>
+
 
 <div id="quiz">
 
 	
-	<p id="our_lawyers">TORT QUIZ</p>
+	<p id="tort_quiz">TORT QUIZ</p>
 
 	<u><h3 id="question_number">1</h3></u>
 	<h3 id="question_index">Andy is training to be the ultimate heavyweight fighter of the world. During practice, he tells his trainer to hit him multiple times. The trainer hits him once and breaks Andy’s nose. Why can’t Andy sue for battery, which is intentional harm to another?</h3>
 
-		<i><p id="answer_index" onclick="myFunction()">Click For Answer.</p></i>
+		<i><p id="answer_index" onclick="myFunction1()">Click For Answer.</p></i>
 
 		<script>
-		function myFunction() {
+		function myFunction1() {
 		    document.getElementById("answer_index").innerHTML = "The trainer IS NOT LIABLE, because Andy assumed the risk and gave him consent to hit him; thus it is not battery.";
 		}
 		</script>
@@ -76,63 +78,56 @@
 	<hr></hr>
 </div>
 
+
 <button id="time_button_infinite" onclick="setTimeout(myFunction)">UNLIMITED TIME</button>
 
-<button id="time_button_easy" onclick="setTimeout(myFunction, 1000); setTimeout(myFunction2, 5000)">EASY (90 Seconds)</button>
+<button id="time_button_easy" onclick="setTimeout(myFunction_easy, 1000); setTimeout(myFunction_easy_2, 5000)">EASY (90 Seconds)</button>
 
-<button id="time_button_medium" onclick="setTimeout(myFunction, 1000); setTimeout(myFunction2, 5000)">MEDIUM (60 Seconds)</button>
+<button id="time_button_medium" onclick="setTimeout(myFunction_medium, 1000); setTimeout(myFunction_medium_2, 5000)">MEDIUM (60 Seconds)</button>
 
-<button id="time_button_hard" onclick="setTimeout(myFunction, 1000); setTimeout(myFunction2, 5000)">HARD (30 Seconds)</button>
+<button id="time_button_hard" onclick="setTimeout(myFunction_hard, 1000); setTimeout(myFunction_hard_2, 5000)">HARD (30 Seconds)</button>
 
 <script>
 
 function myFunction() {
     var quiz = document.getElementById("quiz")
+    var opening_statement = document.getElementById("advice")
     var unlimited_button = document.getElementById("time_button_infinite")
     var easy_button = document.getElementById("time_button_easy")
     var medium_button = document.getElementById("time_button_medium")
     var hard_button = document.getElementById("time_button_hard")
     quiz.style.display = "block";
-    unlimited_button.style.display = "block"
+    unlimited_button.style.display = "block";
     easy_button.style.display = "block";
     medium_button.style.display = "block";
     hard_button.style.display = "block";
   
 }
 
-function myFunction2() {
-	var quiz = document.getElementById("quiz")
-	var easy_button = document.getElementById("time_button_easy")
-	var medium_button = document.getElementById("time_button_medium")
-	var hard_button = document.getElementById("time_button_hard")
-	var end_quiz = document.getElementById('times_up')
-	quiz.style.display = "none";
-	easy_button.style.display = "block";
-	medium_button.style.display = "block";
-	hard_button.style.display = "block";
-	end_quiz.style.display = "block";
-}
 
-
-function myFunction() {
+function myFunction_easy() {
     var quiz = document.getElementById("quiz")
+    var unlimited_button = document.getElementById("time_button_infinite")
     var easy_button = document.getElementById("time_button_easy")
     var medium_button = document.getElementById("time_button_medium")
     var hard_button = document.getElementById("time_button_hard")
     quiz.style.display = "block";
+    unlimited_button.style.display = "none";
     easy_button.style.display = "none";
     medium_button.style.display = "none";
     hard_button.style.display = "none";
   
 }
 
-function myFunction2() {
+function myFunction_easy_2() {
 	var quiz = document.getElementById("quiz")
+	var unlimited_button = document.getElementById("time_button_infinite")
 	var easy_button = document.getElementById("time_button_easy")
 	var medium_button = document.getElementById("time_button_medium")
 	var hard_button = document.getElementById("time_button_hard")
 	var end_quiz = document.getElementById('times_up')
 	quiz.style.display = "none";
+	unlimited_button.style.display = "block";
 	easy_button.style.display = "block";
 	medium_button.style.display = "block";
 	hard_button.style.display = "block";
@@ -141,48 +136,56 @@ function myFunction2() {
 
 
 
-function myFunction() {
+function myFunction_medium() {
     var quiz = document.getElementById("quiz")
    	var easy_button = document.getElementById("time_button_easy")
+   	var unlimited_button = document.getElementById("time_button_infinite")
     var medium_button = document.getElementById("time_button_medium")
     var hard_button = document.getElementById("time_button_hard")
     quiz.style.display = "block";
+    unlimited_button.style.display = "none";
     easy_button.style.display = "none";
     medium_button.style.display = "none";
     hard_button.style.display = "none";
 }
 
-function myFunction2() {
+function myFunction_medium_2() {
 	var quiz = document.getElementById("quiz")
+	var unlimited_button = document.getElementById("time_button_infinite")
 	var easy_button = document.getElementById("time_button_easy")
 	var medium_button = document.getElementById("time_button_medium")
 	var hard_button = document.getElementById("time_button_hard")
 	var end_quiz = document.getElementById('times_up')
 	quiz.style.display = "none";
+	unlimited_button.style.display = "block";
 	easy_button.style.display = "block"
 	medium_button.style.display = "block"
 	hard_button.style.display = "block";
 	end_quiz.style.display = "block";
 }
 
-
-
-function myFunction() {
+function myFunction_hard() {
     var quiz = document.getElementById("quiz")
+    var unlimited_button = document.getElementById("time_button_infinite")
+    var easy_button = document.getElementById("time_button_easy")
     var medium_button = document.getElementById("time_button_medium")
     var hard_button = document.getElementById("time_button_hard")
     quiz.style.display = "block";
+    unlimited_button.style.display = "none";
     easy_button.style.display = "none";
     medium_button.style.display = "none";
     hard_button.style.display = "none";
 }
 
-function myFunction2() {
+function myFunction_hard_2() {
 	var quiz = document.getElementById("quiz")
+	var unlimited_button = document.getElementById("time_button_infinite")
+	var easy_button = document.getElementById("time_button_easy")
 	var medium_button = document.getElementById("time_button_medium")
 	var hard_button = document.getElementById("time_button_hard")
 	var end_quiz = document.getElementById('times_up')
 	quiz.style.display = "none";
+	unlimited_button.style.display = "block";
 	easy_button.style.display = "block";
 	medium_button.style.display = "block";
 	hard_button.style.display = "block";

@@ -3,6 +3,15 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
+#tort_quiz {
+	font-size: 48px;
+	text-align: center;
+	margin-top: 150px;
+	background-color: #8A0808;
+	color: white;
+	padding: 10px;
+}
+
 #question_index {
 	margin-left: 100px;
 	margin-right: 150px;
@@ -81,10 +90,23 @@
 }
 
 #time_button_hard, #time_button_medium, #time_button_easy, #time_button_infinite {
+	margin-top: 150px;
 	font-size: 24px;
 	font-weight: bold;
 	margin-left: 75px;
 	float: left;
+	border-radius: 25px;
+	cursor: pointer;
+	padding: 10px;
+}
+
+#time_button_hard:hover, #time_button_medium:hover, #time_button_easy:hover, #time_button_infinite:hover {
+	color: white;
+	background-color: #8A0808;
+} 
+
+#return_button {
+	display: none;
 }
 
 #times_up {
