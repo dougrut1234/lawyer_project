@@ -58,3 +58,38 @@
 #question_number {
 	text-align: center;
 }
+
+#quiz {
+	display: none;
+}
+
+#quiz2 {
+	display: none;
+}
+
+#times_up {
+	display: none;
+	font-size: 72px;
+	margin-align: center;
+	font-weight: bold;
+	margin-left: 500px
+
+}
+
+#countdowntimer {
+	font-size: 72px;
+}
+
+#time_button_hard, #time_button_medium, #time_button_easy, #time_button_infinite {
+	font-size: 24px;
+	font-weight: bold;
+	margin-left: 75px;
+	float: left;
+}
+
+#times_up {
+	display: none;
+	font-size: 48px;
+	margin-left: 20px;
+}
+

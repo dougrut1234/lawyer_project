@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   post "/courses/:course_id/questions/new" => "questions#create"
   get "/reportadvices/:advice_id/advices/" => "reports#create", as: "report_advice"
 
+
   	root to: "home#index"
   	
 	resources :lawyers

@@ -35,6 +35,8 @@ gem 'jbuilder', '~> 2.5'
 gem "paperclip", "~> 4.2"
 
 gem 'devise'
+
+gem "cancan"
  
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

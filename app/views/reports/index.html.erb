@@ -1,7 +1,10 @@
+<p id="reported_text_title">Reported Advice</p>
+
 <% @reports.each do |report| %>
 
-<h2><%= report.text %></h2>
-<%=report.advice_id%>
+<p id="reported_text">
+	<b>Post# <%=report.advice_id%></b> <%= report.text %>
+</p>
 
 <% end %>
 

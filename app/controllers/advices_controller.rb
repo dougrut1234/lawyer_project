@@ -44,6 +44,10 @@ class AdvicesController < ApplicationController
   	end
 
 
+#   	load_and_authorize_resource
+
+# load_and_authorize_resource :nested => :advice
+
 	private
     
     def advice_params

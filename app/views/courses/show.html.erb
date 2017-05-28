@@ -8,9 +8,9 @@
 
 <div id="margin_for_chapters">
 
-	<p id="list1">Introduction</p>
-	<p id="list2">Intentional Torts</p>
-	<p id="list3">Unintentional Torts</p>
+	<p id="list1" onclick="myFunction()">Introduction</p><p id = "question_mark">?</p>
+	<p id="list2" onclick="myFunction()">Intentional Torts</p><p id = "question_mark2">?</p>
+	<p id="list3" onclick="myFunction()">Unintentional Torts</p><p id = "question_mark3">?</p>
 	<p id="list">Duty of Care</p>
 	<p id="list">Causation</p>
 	<p id="list">Harm and Emotional Distress</p>
@@ -44,9 +44,7 @@
 <div id="first_chapter">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<body>
-
-	<p id="chapter_title">INTRODUCTION<br>
-	What is this?</p>
+	
 	<div id ="arrow">
 		<button onclick="plusDivs(-1)">&#10094;</button>
 		<button onclick="plusDivs(1)">&#10095;</button>
@@ -61,7 +59,7 @@
 	   <p id="caption_definition">Common law is unwritten law that originated hundreds of years ago, going all the way back to England, where it then settled here in the states. A long time ago, kings were able to make up laws. Fortunately, laws change over time, and we don’t have kings in the United States anymore.</p>
 	   <p id="caption_story">“Look at England and its kings as a school principal. They originate the laws and rules of what goes for the kids. They have the appropriate authority to expel when a child acts up.”</p>
 	  </div>
-	</div>
+	
 
 	<div class="w3-display-container mySlides fade">
 	<div class="numbertext">2 / 3</div>
@@ -71,7 +69,7 @@
 		This Public Policy is established by our legislators.</p>
 	   <p id="caption_story">“Now instead of looking at England and kings, we will look at politicians and judges as the teachers. Before the school year starts, they set up classroom rules and hand out a grading policy in which they themselves have established."</p>
 		</div>
-	</div>
+
 
 	<div class="w3-display-container mySlides fade">
 	<div class="numbertext">3 / 3</div>
@@ -81,7 +79,7 @@
 		It means “more probable than not” or “more true than not true” (51% true vs. 49% not true).</p>
 	   <p id="caption_story">“Someone broke the cookie jar! Andy and his daughter Abigail are present at the scene of the crime. Abigail loves cookies and was told not to have any. Andy has crumbs around his mouth but does that mean he tried to reach for the cookie jar like Abigail would? Though it’s not clear -cut, but looking at the evidence, it’s more likely true Andy accidentally broke the cookie jar."</p>
 </div>
-
+</div>
 
 
 	<script>
@@ -122,23 +120,36 @@
 </div>
 
 <script>
+
 	var modal_chapter_one = document.getElementById('chapter_one_modal');
 
-	chapter_title.onclick = function() {
+	question_mark.onclick = function() {
 	    modal_chapter_one.style.display = "block";
 	}
-	chapter_title.onmouseleave = function() {
+	question_mark.onmouseleave = function() {
 	    modal_chapter_one.style.display = "none";
 	}
 </script>
 
 <script>
 	var introduction = document.getElementById('first_chapter');
+	var button_color_introduction = document.getElementById('list1')
+	var button_color_intentional_torts = document.getElementById('list2')
+	var button_color_unintentional_torts = document.getElementById('list3')
+	var introduction_question_mark = document.getElementById('question_mark');
+	var intentional_torts_question_mark = document.getElementById('question_mark2');
+	var unintentional_torts_question_mark = document.getElementById('question_mark3');
 	list1.onclick = function() {
 		    introduction.style.display = "block";
 		    intentional_torts.style.display = "none";
 		    unintentional_torts.style.display = "none";
 		    default_picture.style.display = "none";
+		    button_color_introduction.style.background = "grey";
+		    button_color_intentional_torts.style.background = "#8A0808";
+		    button_color_unintentional_torts.style.background = "#8A0808";
+		    introduction_question_mark.style.display = "block";
+		    intentional_torts_question_mark.style.display = "none";
+		    unintentional_torts_question_mark.style.display = "none";
 	}
 </script>
 
@@ -146,8 +157,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<body>
 
-	<p id="chapter_title1">INTENTIONAL TORTS<br>
-	What is it?</p>
+
 	<div id ="arrow1">
 		<button onclick="plusDivs1(-1)">&#10094;</button>
 		<button onclick="plusDivs1(1)">&#10095;</button>
@@ -163,7 +173,7 @@
 		If you consent to the harm, then it will not be battery.</p>
 	   <p id="caption_story">“Angry Earl hits Andy for forgetting to pay him back forty dollars. (BATTERY) Andy, betting Angry Earl forty dollars that he is invincible, dares Earl to hit him. (NOT BATTERY)</p>
 	  </div>
-	</div>
+
 
 	<div class="w3-display-container mySlides1 fade">
 	<div class="numbertext1">2 / 3</div>
@@ -172,8 +182,7 @@
 	    <p id="caption_definition">Intent to create a reasonable apprehension of an imminent bodily injury that is likely to result in a harmful contact.<br> A.􏰀 There doesn’t have to be actual physical contact.<br> B.􏰀 Victim must be aware of the assault. <br> C.􏰀 If victim laughs, then it is not assault.</p>
 	   <p id="caption_story">“Angry Earl chases a frightened Andy with a baseball bat. (ASSAULT). Angry Earl chases Andy who is laughing, not taking him seriously. (NOT ASSAULT)"</p>
 		</div>
-	</div>
-
+	
 	<div class="w3-display-container mySlides1 fade">
 	<div class="numbertext1">3 / 3</div>
 	    <p id="caption_title_transferred_intent">TRANSFERRED INTENT</p>
@@ -184,7 +193,6 @@
 </body>
 </div>
 
-</div>
 
 	<script>
 	var slideIndex1 = 1;
@@ -217,23 +225,37 @@
 </div>
 
 <script>
+
 	var modal_chapter_two = document.getElementById('chapter_two_modal');
 
-	chapter_title1.onclick = function() {
+	question_mark2.onclick = function() {
 	    modal_chapter_two.style.display = "block";
 	}
-	chapter_title1.onmouseleave = function() {
+	question_mark2.onmouseleave = function() {
 	    modal_chapter_two.style.display = "none";
-		}
+	}
 </script>
 
 <script>
 	var intentional_torts = document.getElementById('second_chapter');
+	var button_color_introduction = document.getElementById('list1')
+	var button_color_intentional_torts = document.getElementById('list2')
+	var button_color_unintentional_torts = document.getElementById('list3')
+	var introduction_question_mark = document.getElementById('question_mark')
+	var intentional_torts_question_mark = document.getElementById('question_mark2')
+	var unintentional_torts_question_mark = document.getElementById('question_mark3')
+
 	list2.onclick = function() {
 		    intentional_torts.style.display = "block";
 		    introduction.style.display = "none";
 		    default_picture.style.display = "none";
 		    unintentional_torts.style.display = "none";
+		    button_color_intentional_torts.style.background = "grey";
+		    button_color_introduction.style.background = "#8A0808";
+		    button_color_unintentional_torts.style.background = "#8A0808";
+		    introduction_question_mark.style.display = "none";
+		    unintentional_torts_question_mark.style.display = "none";
+		    intentional_torts_question_mark.style.display = "block";
 	}
 </script>
 
@@ -241,8 +263,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<body>
 
-	<p id="chapter_title2">UNINTENTIONAL TORTS<br>
-	What is this?</p>
 	<div id ="arrow2">
 		<button onclick="plusDivs2(-1)">&#10094;</button>
 		<button onclick="plusDivs2(1)">&#10095;</button>
@@ -257,8 +277,7 @@
 	   <p id="caption_definition">Your conduct will always be compared to that of a reasonable defendant under similar circumstances.<br> There are various “degrees” to standard of care, depending on the given situation.<br>Examples include “slight” and “great.”</p>
 	   <p id="caption_story">“Andy, looking down, texting while crossing the street, and not looking where he’s going, can be viewed as breaching a “slight” standard of care.<br>Andy driving a bus full of children blindfolded would be viewed as breaching a “great” standard of care.</p>
 	  </div>
-	</div>
-
+	
 	<div class="w3-display-container mySlides2 fade">
 	<div class="numbertext2">2 / 3</div>
 	<p id="caption_title_if_a_child_is_negligent">IF A CHILD IS NEGLIGENT</p>
@@ -266,8 +285,7 @@
 	    <p id="caption_definition">...he or she will be judged accordingly to a specific age group, experience level, or education relative to other children unless the child engages in inherently dangerous activity, in which this case the child will be held to an adult standard of care or the parent/guardian will be liable.</p>
 	   <p id="caption_story">“Abigail breaks a vase in an antique shop. She will be judged accordingly to someone of her age.<br>Abigail, driving a tractor, runs over the Stephensons’ flowers. Because that activity is inherently dangerous, and because Andy let her mow the lawn so he could watch the big game, he will be held liable for Abigail’s actions."</p>
 		</div>
-	</div>
-
+	
 	<div class="w3-display-container mySlides2 fade">
 	<div class="numbertext2">3 / 3</div>
 	    <p id="caption_title_gross_negligence">GROSS NEGLIGENCE</p>
@@ -277,7 +295,7 @@
 	  </div>
 </body>
 </div>
-
+</div>
 </div>
 
 	<script>
@@ -313,22 +331,33 @@
 <script>
 	var modal_chapter_three = document.getElementById('chapter_three_modal');
 
-	chapter_title2.onclick = function() {
+	question_mark3.onclick = function() {
 	    modal_chapter_three.style.display = "block";
 	}
-	chapter_title2.onmouseleave = function() {
+	question_mark3.onmouseleave = function() {
 	    modal_chapter_three.style.display = "none";
-		}
+	}
 
 </script>
 
 <script>
 	var unintentional_torts = document.getElementById('third_chapter');
+	var button_color_introduction = document.getElementById('list1')
+	var button_color_intentional_torts = document.getElementById('list2')
+	var button_color_unintentional_torts = document.getElementById('list3')
+	var unintentional_torts_question_mark = document.getElementById('question_mark3')
+	var intentional_torts_question_mark = document.getElementById('question_mark2')
 	list3.onclick = function() {
 			unintentional_torts.style.display = "block";
 		    intentional_torts.style.display = "none";
 		    introduction.style.display = "none";
 		    default_picture.style.display = "none";
+		    button_color_intentional_torts.style.background = "#8A0808";
+		    button_color_introduction.style.background = "#8A0808";
+		    button_color_unintentional_torts.style.background = "grey";
+		    introduction_question_mark.style.display = "none";
+		    intentional_torts_question_mark.style.display = "none";
+		    unintentional_torts_question_mark.style.display = "block";
 	}
 </script>
 
@@ -339,3 +368,5 @@
 
 </body>
 </html>
+
+
