@@ -1,4 +1,4 @@
-
+<div id="course_wrap">
 <p id="advice">Quiz time! Just a very SMALL sample of what you'll read in the LSAT. You're going to have to be on fire with your answers. By that, you should be able to answer quickly and on your feet. Like most things in life you will be under a time crunch and this quiz is a good place to start. You'll learn to process and interpret information quickly and with that newly developed skill you'll able to succeed in the highly pressured environment of a working attorney.</p>
 
 
@@ -79,7 +79,7 @@
 </div>
 
 
-<button id="time_button_infinite" onclick="setTimeout(myFunction); setTimeout(myFunction_quiz, 1000)">UNLIMITED TIME</button>
+<button id="time_button_infinite" onclick="setTimeout(myFunction); setTimeout(myFunction_quiz)">UNLIMITED TIME</button>
 
 <button id="time_button_easy" onclick="setTimeout(myFunction_easy, 1000); setTimeout(myFunction_quiz, 1000); setTimeout(myFunction_easy_2, 5000)">EASY (90 Seconds)</button>
 
@@ -87,8 +87,9 @@
 
 <button id="time_button_hard" onclick="setTimeout(myFunction_hard, 1000); setTimeout(myFunction_quiz, 1000); setTimeout(myFunction_hard_2, 5000)">HARD (30 Seconds)</button>
 
-<script>
+<p id="times_up">How Did You Do?</p>
 
+<script>
 function myFunction() {
     var quiz = document.getElementById("quiz")
     var opening_statement = document.getElementById("advice")
@@ -96,33 +97,33 @@ function myFunction() {
     var easy_button = document.getElementById("time_button_easy")
     var medium_button = document.getElementById("time_button_medium")
     var hard_button = document.getElementById("time_button_hard")
+    var end_quiz = document.getElementById('times_up')
     quiz.style.display = "block";
-    unlimited_button.style.display = "block";
-    easy_button.style.display = "block";
-    medium_button.style.display = "block";
-    hard_button.style.display = "block";
+    unlimited_button.style.display = "none";
+    easy_button.style.display = "none";
+    medium_button.style.display = "none";
+    hard_button.style.display = "none";
+    end_quiz.style.display = "none";
   
 }
-
 function myFunction_quiz() {
     document.getElementById('tort_quiz').scrollIntoView();    
 };
-
-
 function myFunction_easy() {
     var quiz = document.getElementById("quiz")
     var unlimited_button = document.getElementById("time_button_infinite")
     var easy_button = document.getElementById("time_button_easy")
     var medium_button = document.getElementById("time_button_medium")
     var hard_button = document.getElementById("time_button_hard")
+    var end_quiz = document.getElementById('times_up')
     quiz.style.display = "block";
     unlimited_button.style.display = "none";
     easy_button.style.display = "none";
     medium_button.style.display = "none";
     hard_button.style.display = "none";
+    end_quiz.style.display = "none";
   
 }
-
 function myFunction_easy_2() {
 	var quiz = document.getElementById("quiz")
 	var unlimited_button = document.getElementById("time_button_infinite")
@@ -137,22 +138,20 @@ function myFunction_easy_2() {
 	hard_button.style.display = "block";
 	end_quiz.style.display = "block";
 }
-
-
-
 function myFunction_medium() {
     var quiz = document.getElementById("quiz")
    	var easy_button = document.getElementById("time_button_easy")
    	var unlimited_button = document.getElementById("time_button_infinite")
     var medium_button = document.getElementById("time_button_medium")
     var hard_button = document.getElementById("time_button_hard")
+    var end_quiz = document.getElementById('times_up')
     quiz.style.display = "block";
     unlimited_button.style.display = "none";
     easy_button.style.display = "none";
     medium_button.style.display = "none";
     hard_button.style.display = "none";
+    end_quiz.style.display = "none";
 }
-
 function myFunction_medium_2() {
 	var quiz = document.getElementById("quiz")
 	var unlimited_button = document.getElementById("time_button_infinite")
@@ -167,20 +166,20 @@ function myFunction_medium_2() {
 	hard_button.style.display = "block";
 	end_quiz.style.display = "block";
 }
-
 function myFunction_hard() {
     var quiz = document.getElementById("quiz")
     var unlimited_button = document.getElementById("time_button_infinite")
     var easy_button = document.getElementById("time_button_easy")
     var medium_button = document.getElementById("time_button_medium")
     var hard_button = document.getElementById("time_button_hard")
+    var end_quiz = document.getElementById('times_up')
     quiz.style.display = "block";
     unlimited_button.style.display = "none";
     easy_button.style.display = "none";
     medium_button.style.display = "none";
     hard_button.style.display = "none";
+    end_quiz.style.display = "none";
 }
-
 function myFunction_hard_2() {
 	var quiz = document.getElementById("quiz")
 	var unlimited_button = document.getElementById("time_button_infinite")
@@ -195,8 +194,6 @@ function myFunction_hard_2() {
 	hard_button.style.display = "block";
 	end_quiz.style.display = "block";
 }
-
-
 </script>
 
 
@@ -204,5 +201,5 @@ function myFunction_hard_2() {
 	<div id="question_index_padding"></div>
 
 
-
+</audio>
 

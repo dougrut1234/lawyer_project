@@ -1,45 +1,46 @@
 <!DOCTYPE html>
 <html>
 
+<div id="course_wrap">
+    <p id="navigation_links2"><%= link_to("Home", "/home/") %></p> 
+    <a id="about">About</a>
 
-<p id="navigation_links2"><%= link_to("Home", "/home/") %></p> 
-<a id="about">About</a>
+    <%=image_tag "Toon_In_Logo.jpg", id: "logo" %> 
+    <p id="tagline">Look. Learn. Laugh!</p>
+      <head>
+        <title>LawProject</title>
+        <%= csrf_meta_tags %>
 
-<%=image_tag "Toon_In_Logo.jpg", id: "logo" %> 
-<p id="tagline">Look. Learn. Laugh!</p>
-  <head>
-    <title>LawProject</title>
-    <%= csrf_meta_tags %>
+        <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+        <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+      </head>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+        <% if flash[:notice] %>
+          <div id="notice">
+            <%= flash[:notice]%>
+          </div>
+        <% end %>
 
-    <% if flash[:notice] %>
-      <div id="notice">
-        <%= flash[:notice]%>
-      </div>
-    <% end %>
-
-    <% if flash[:alert] %>
-      <div id="alert">
-        <%= flash[:alert]%>
-      </div>
-    <% end %>
+        <% if flash[:alert] %>
+          <div id="alert">
+            <%= flash[:alert]%>
+          </div>
+        <% end %>
 
 
 
-  <body>
+      <body>
 
- <!--  <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p> -->
-    <%= yield %>
-  </body>
-</html>
+     <!--  <p class="notice"><%= notice %></p>
+        <p class="alert"><%= alert %></p> -->
+        <%= yield %>
+      </body>
+    </html>
 
-<html>
-<head>
-<style>
+    <html>
+    <head>
+    <style>
+</div>
 /* The Modal (background) */
 .modal {
     display: none; /* Hidden by default */
