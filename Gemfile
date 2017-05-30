@@ -37,6 +37,10 @@ gem "paperclip", "~> 4.2"
 gem 'devise'
 
 gem "cancan"
+
+gem 'activeadmin', github: 'activeadmin'
+
+gem 'inherited_resources', github: 'activeadmin/inherited_resources'
  
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

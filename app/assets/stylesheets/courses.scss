@@ -19,12 +19,15 @@ h1 {
 h2 {
 	background-color: #8A0808;
 	padding: 10px;
+	font-color: white;
 }
 
-a {
-	color: white;
-	text-decoration: none;
+a, a:link, a:visited {
+    color: white;
+    text-decoration: none;
 }
+
+
 
 h2:hover {
 	background-color: gray;
@@ -91,7 +94,7 @@ h2:hover {
 
 #title {
 	margin-top: -40px;
-	margin-left: 1055px;
+	margin-left: 1032px;
 	font-size: 36px;
 	text-decoration: underline;
 }
@@ -138,13 +141,16 @@ h2:hover {
 
 #bottom_button1 {
 	float: right;
-	color: #8A0808;
+	background-color: #8A0808;
+	font-color: white;
 	font-size: 24px;
 	margin-top: 475px;
 	margin-right: -340px;
 	padding-left: 66px;
 	padding-right: 66px;
 	border-style: solid;
+	border-weight: 3px;
+	border-color: black;
 }
 
 #bottom_button1:hover {
@@ -153,7 +159,8 @@ h2:hover {
 
 #bottom_button2 {
 	float: right;
-	color: #8A0808;
+	background-color: #8A0808;
+	font-color: white;
 	font-size: 24px;
 	margin-top: 525px;
 	margin-right: -340px;
@@ -244,8 +251,8 @@ h2:hover {
 }
 
 #arrow, #arrow1, #arrow2 {
-	margin-top: 200px;
-	margin-left: 900px;
+	margin-top: 175px;
+	margin-left: 850px;
 	position: absolute;
 }
 
@@ -268,12 +275,11 @@ h2:hover {
 
 .numbertext, .numbertext1, .numbertext2 {
   color: black;
-  font-size: 12px;
   padding: 8px 12px;
   margin-top: 525px;
-  margin-left: 900px;
+  margin-left: 860px;
   position: absolute;
-  font-size: 14px;
+  font-size: 20px;
   top: 0;
 }
 
@@ -309,6 +315,7 @@ h2:hover {
 
 #first_chapter {
 	display: none;
+	margin-left: -25px;
 }
 
 #second_chapter {
@@ -366,26 +373,47 @@ h2:hover {
 
 #question_mark {
 	float: left;
-	font-size: 36px;
-	margin-left: -30px;
-	margin-top: -63px;
+	font-size: 18px;
+	margin-left: -40px;
+	margin-top: -70px;
 	display: none;
+    border:1px solid black;    
+    height:25px;
+    border-radius:50%;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    width:25px;
+    cursor: pointer;
 }
 
 #question_mark2 {
 	float: left;
-	font-size: 36px;
-	margin-left: -30px;
-	margin-top: -63px;
+	font-size: 18px;
+	margin-left: -40px;
+	margin-top: -70px;
 	display: none;
+	border:1px solid black;    
+    height:25px;
+    border-radius:50%;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    width:25px;
+    cursor: pointer;
 }
 
 #question_mark3 {
 	float: left;
-	font-size: 36px;
-	margin-left: -30px;
-	margin-top: -63px;
+	font-size: 18px;
+	margin-left: -40px;
+	margin-top: -70px;
 	display: none;
+	border:1px solid black;    
+    height:25px;
+    border-radius:50%;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    width:25px;
+    cursor: pointer;
 }
 
 .test_slide {

@@ -87,3 +87,10 @@
   display: none;
 
 }
+
+#modal_heading {
+  color: white;
+  font-size: 32px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
