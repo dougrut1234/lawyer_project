@@ -16,15 +16,19 @@
 
 #notice {
   background-color: green;
+  margin-top: 30px;
   color: white;
   padding: 10px;
+  width: 500px;
   border-radius: 2px;
 }
 
 #alert {
   background-color: red;
+  margin-top: 30px;
   color: white;
   padding: 10px;
+  width: 500px;
   border-radius: 2px;
 }
 
@@ -65,11 +69,11 @@
 }
 
 #shirt2:hover {
-  background-color: #8A0808;;
+  background-color: #8A0808;
 }
 
 #shirt3:hover {
-  background-color: #8A0808;;
+  background-color: #8A0808;
 }
 
 
@@ -93,4 +97,32 @@
   font-size: 32px;
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+#admin {
+  background-color: gray;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  float: right;
+  margin-right: -300px;
+  margin-top: 525px;
+  margin-bottom: 50px;
+  border-style: solid;
+  border-color: gray;
+}
+
+#admin:hover {
+  font-color: black;
+  background-color: #8A0808;
+}
+
+#login_form_shift {
+  margin-left: 200px;
+  margin-top: 80px;
+}
+
+#look_learn_laugh {
+  font-size: 24px;
 }

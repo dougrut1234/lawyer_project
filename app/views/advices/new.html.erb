@@ -5,19 +5,19 @@
 <div id="advice_form">
 <p>
 <%= form_for @advice do |form| %>   
-<b><%= form.label :text %></b><p> 
+<b><%= form.label :advice %></b><p> 
 <%= form.text_area :text %>  
 </p>
 </p>
-<p>
+<p id="advice_space">
 <%= form.label :author %>: 
 <%= form.text_field :author %> 
 </p>
-<p>
+<p id="advice_space">
 <%= form.label :education %>: 
 <%= form.text_field :education %> 
 </p>
-<p>
+<p id="advice_space">
 <%= form.label :firm %>: 
 <%= form.text_field :firm %> 
 </p>
@@ -25,8 +25,9 @@
 <%=@t %>
 
 
-
+<p id="advice_space">
 <%= form.submit "Speak Up!" %>
+</p>
 </div>
 <div id="padding_bottom"></div>
 

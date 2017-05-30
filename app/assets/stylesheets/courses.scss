@@ -44,6 +44,8 @@ h2:hover {
 	margin-left: 175px;
 	position: absolute;
 	z-index: -1;
+
+
 }
 
 #shirt:hover {
@@ -254,6 +256,11 @@ h2:hover {
 	margin-top: 175px;
 	margin-left: 850px;
 	position: absolute;
+	cursor: pointer;
+}
+
+button {
+	cursor: pointer;
 }
 
 .fade {
@@ -315,15 +322,17 @@ h2:hover {
 
 #first_chapter {
 	display: none;
-	margin-left: -25px;
+	
 }
 
 #second_chapter {
 	display: none;
+	margin-left: 26px;
 }
 
 #third_chapter {
 	display: none;
+	margin-left: 26px;
 }
 
 #caption_title_battery {
@@ -436,4 +445,8 @@ h2:hover {
 	margin-left:auto;
     margin-right:auto;
     width:1363px;
+}
+
+#logout_button {
+	margin-top: 30px;
 }

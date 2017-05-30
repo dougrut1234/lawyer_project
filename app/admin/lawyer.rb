@@ -11,5 +11,5 @@ ActiveAdmin.register Lawyer do
 #   permitted << :other if params[:action] == 'create' && current_user.admin?
 #   permitted
 # end
-permit_params :name, :description, :picture
+permit_params :first_name, :last_name, :name_of_firm
 end

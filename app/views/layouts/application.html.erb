@@ -30,7 +30,15 @@
 
 
       <body>
-
+            <% if user_signed_in? %>
+              <li>
+              <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>        
+              </li>
+            <% else %>
+              <li>
+              <%= link_to('Login', new_user_session_path)  %>  
+              </li>
+            <% end %>
      <!--  <p class="notice"><%= notice %></p>
         <p class="alert"><%= alert %></p> -->
         <%= yield %>
@@ -119,18 +127,19 @@
   <!-- Modal content -->
   <div class="modal-content">
     <div class="modal-header">
-      
+      <span></span>
       <h4 id="modal_heading">Toon In! Books</h4>
     </div>
     <div class="modal-body">
       <p id="about_text">Let's face it guys and gals. Law school is a real chore. You will be studying more than you sleep. You definitely won't have enough time for your friends or significant other. However, if you can make it through your first year...you can make it through your final two years. Yeah, yeah, you hear everything about law school. The books. The texts. The lectures (hopefully not a boring one)...but one thing is a guarantee is the reading. You will be reading a lot and for better or worse thee are NOT fun books. Toon In series hope to change that. Starting with Legal Toons, these books provide not only fun humor books for your education, but it simplifies the material. You WILL be taking a class in the books we provide. Therefore, only way to go is up! And laugh in the process of course.</p>
-      <p>Look. Learn. Laugh!</p>
+      <p id="look_learn_laugh">Look. Learn. Laugh!</p>
     </div>
     <div class="modal-footer">
     </div>
   </div>
 
 </div>
+
 
 <script>
 var modal = document.getElementById('myModal');
@@ -139,7 +148,7 @@ var span = document.getElementsByClassName("close")[0];
 about.onclick = function() {
     modal.style.display = "block";
 }
-span.onclick = function() {
+about.onmouseleave = function() {
     modal.style.display = "none";
 }
 window.onclick = function(event) {
@@ -148,6 +157,7 @@ window.onclick = function(event) {
     }
 }
 </script>
+
 
 </body>
 </html>
