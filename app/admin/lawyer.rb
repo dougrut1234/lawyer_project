@@ -12,6 +12,9 @@ ActiveAdmin.register Lawyer do
 
  form :html => { :multipart => true } do |f|
     f.inputs "Upload" do
+      f.input :first_name
+      f.input :last_name
+      f.input :name_of_firm
       f.input :avatar, :type => :file
     end
     f.actions

@@ -15,7 +15,7 @@ class AdvicesController < ApplicationController
 
 	def create
 		@advice = Advice.new(advice_params)
-		if @advice.save!
+		if @advice.save
 			flash[:notice] = "Thank you for your post. We hope your words will enlighten busy law students everywhere!"
 			redirect_to "/advices/"
 		else
@@ -32,9 +32,9 @@ class AdvicesController < ApplicationController
     	@advice.advice = params[:advice][:text]
     	@advice.education = params[:advice][:education]
     	@advice.firm = params[:advice][:firm]
-      		if @advice.save
+      		if @advice.save!
       			flash[:notice] = "Advice Added"
-      			redirect_to "/advices/"
+      			redirect_to advices_path
     		end
   	end
 

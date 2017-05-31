@@ -13,11 +13,12 @@ Rails.application.routes.draw do
   get "/reportadvices/:advice_id/advices/" => "reports#create", as: "report_advice"
 
 
+
   	root to: "home#index"
   	
 	resources :lawyers, only: [:show, :index]
 
-	resources :advices, only: [:index]
+	resources :advices, only: [:index, :new, :show, :create]
 
 	resources :reports 
 
