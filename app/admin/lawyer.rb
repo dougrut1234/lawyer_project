@@ -1,15 +1,22 @@
 ActiveAdmin.register Lawyer do
 # See permitted parameters documentation:
-# https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
-#
+#  form :html => { :enctype => "multipart/form-data" } do |f|
+
 # permit_params :list, :of, :attributes, :on, :model
-#
+
 # or
-#
-# permit_params do
-#   permitted = [:permitted, :attributes]
+# permit_params #   permitted = [:permitted, :attributes]
 #   permitted << :other if params[:action] == 'create' && current_user.admin?
 #   permitted
 # end
-permit_params :first_name, :last_name, :name_of_firm
+
+ form :html => { :multipart => true } do |f|
+    f.inputs "Upload" do
+      f.input :avatar, :type => :file
+    end
+    f.actions
+  end
+
+
+permit_params :first_name, :last_name, :name_of_firm, :avatar
 end
