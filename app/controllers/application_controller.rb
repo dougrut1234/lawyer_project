@@ -13,6 +13,6 @@ end
   #     redirect_to login_path, :notice => 'if you want to add a notice'
   #     ## if you want render 404 page
   #     ## render :file => File.join(Rails.root, 'public/404'), :formats => [:html], :status => 404, :layout => false
-  before_action :authenticate_user!
+  # before_action :authenticate_user!
   # end
 end

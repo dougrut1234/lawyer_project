@@ -110,7 +110,7 @@
   margin-top: 525px;
   margin-bottom: 50px;
   border-style: solid;
-  border-color: gray;
+  border-width: 3px;
 }
 
 #admin:hover {
