@@ -123,7 +123,7 @@ hr {
 	float: left
 }
 
-#navigation_links2 {
+#home {
 	background-color: #8A0808;
 	font-size: 14px;
 	padding: 5px;
@@ -136,6 +136,22 @@ hr {
 	border-radius: 25px;
 	margin-top: 20px;
 	float: right;
+}
+
+#home:hover {
+	background-color: #8A0808;
+	font-size: 14px;
+	padding: 5px;
+	padding-right: 9px;
+	padding-left: 9px;
+	margin-bottom: -100px;
+	display: inline-block;
+	margin-left: 1230px;
+	margin-right: 60px;
+	border-radius: 25px;
+	margin-top: 20px;
+	float: right;
+	text-decoration: underline;
 }
 
 #about {
@@ -151,6 +167,22 @@ hr {
 	border-radius: 25px;
 	color: white;
 	cursor: pointer;
+}
+
+#about:hover {
+	background-color: #8A0808;
+	font-size: 14px;
+	padding: 5px;
+	padding-right: 9px;
+	padding-left: 9px;
+	margin-bottom: -100px;
+	display: inline-block;
+	margin-left: 1150px;
+	margin-top: 20px;
+	border-radius: 25px;
+	color: white;
+	cursor: pointer;
+	text-decoration: underline;
 }
 
 #advice_message {

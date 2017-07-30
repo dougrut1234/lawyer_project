@@ -2,7 +2,7 @@
 <html>
 
 <div id="course_wrap">
-    <p id="navigation_links2"><%= link_to("Home", "/") %></p> 
+    <p id="home"><%= link_to("Home", "/") %></p> 
     <a id="about">About</a>
 
     <%=image_tag "Toon_In_Logo.jpg", id: "logo" %> 
@@ -49,21 +49,21 @@
     <head>
     <style>
 </div>
-/* The Modal (background) */
+
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
 }
-/* Modal Content */
+
 .modal-content {
     position: relative;
     background-color: #fefefe;
@@ -77,7 +77,7 @@
     animation-name: animatetop;
     animation-duration: 0.4s
 }
-/* Add Animation */
+
 @-webkit-keyframes animatetop {
     from {top:-300px; opacity:0} 
     to {top:0; opacity:1}
@@ -86,7 +86,7 @@
     from {top:-300px; opacity:0}
     to {top:0; opacity:1}
 }
-/* The Close Button */
+
 .close {
     color: white;
     float: right;
@@ -119,19 +119,14 @@
 <body>
 
 
-<!-- Trigger/Open The Modal -->
-
-<!-- The Modal -->
 <div id="myModal" class="modal">
-
-  <!-- Modal content -->
   <div class="modal-content">
     <div class="modal-header">
       <span></span>
       <h4 id="modal_heading">Toon In! Books</h4>
     </div>
     <div class="modal-body">
-      <p id="about_text">Let's face it guys and gals. Law school is a real chore. You will be studying more than you sleep. You definitely won't have enough time for your friends or significant other. However, if you can make it through your first year...you can make it through your final two years. Yeah, yeah, you hear everything about law school. The books. The texts. The lectures (hopefully not a boring one)...but one thing is a guarantee is the reading. You will be reading a lot and for better or worse thee are NOT fun books. Toon In series hope to change that. Starting with Legal Toons, these books provide not only fun humor books for your education, but it simplifies the material. You WILL be taking a class in the books we provide. Therefore, only way to go is up! And laugh in the process of course.</p>
+      <p id="about_text">Let's face it guys and gals. Law school is a real chore. You will be studying more than you sleep. You definitely won't have enough time for your friends or significant other. However, if you can make it through your first year...you can make it through your final two years. Yeah, yeah, you hear everything about law school. The books. The texts. The lectures (hopefully not a boring one)...but one thing is a guarantee is the reading. You will be reading a lot and for better or worse they are NOT fun books. Toon In series hope to change that. Starting with Legal Toons, these books provide not only fun humor books for your education, but it simplifies the material. You WILL be taking a class in the books we provide. Therefore, only way to go is up! And laugh in the process of course.</p>
       <p id="look_learn_laugh">Look. Learn. Laugh!</p>
     </div>
     <div class="modal-footer">
@@ -142,20 +137,20 @@
 
 
 <script>
-var modal = document.getElementById('myModal');
-var about = document.getElementById("about");
-var span = document.getElementsByClassName("close")[0];
-about.onclick = function() {
-    modal.style.display = "block";
-}
-about.onmouseleave = function() {
-    modal.style.display = "none";
-}
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
+  var modal = document.getElementById('myModal');
+  var about = document.getElementById("about");
+  var span = document.getElementsByClassName("close")[0];
+  about.onclick = function() {
+      modal.style.display = "block";
+  }
+  about.onmouseleave = function() {
+      modal.style.display = "none";
+  }
+  window.onclick = function(event) {
+      if (event.target == modal) {
+          modal.style.display = "none";
+      }
+  }
 </script>
 
 

@@ -1,18 +1,18 @@
 <div id="course_wrap">
-<p id="our_lawyers">OUR LAWYERS</p>
+	<p id="our_lawyers">OUR LAWYERS</p>
 
 
-<% @lawyers.each do |lawyer| %>
+	<% @lawyers.each do |lawyer| %>
 
-<div id="lawyer_border1">
-	<div id="move_pic"><%= image_tag lawyer.avatar(:thumb) %></div>
-	<div id ="float">
-	<p>
-	<b><%= lawyer.first_name %> <%= lawyer.last_name%></b><br>
-	<i><%= lawyer.name_of_firm %></i><br>
-	</p>
-	</div>
-	</div>
-<% end %>
+	<div id="lawyer_border1">
+		<div id="move_pic"><%= image_tag lawyer.avatar(:thumb) %></div>
+		<div id ="float">
+			<p>
+			<b><%= lawyer.first_name %> <%= lawyer.last_name%></b><br>
+			<i><%= lawyer.name_of_firm %></i><br>
+			</p>
+		</div>
+		</div>
+	<% end %>
 
 </div>

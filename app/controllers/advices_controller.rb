@@ -1,7 +1,7 @@
 class AdvicesController < ApplicationController
 
 	def index
-		@advices = Advice.all
+		@advices = Advice.order('created_at DESC')
 		@t = Time.now.strftime("%D")
 	end
 

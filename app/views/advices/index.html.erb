@@ -1,37 +1,38 @@
 <div id="course_wrap">
-<p id="advice">If you are reading this and currently attending law school, congratulations! You have a long and tough journey ahead of you. There will be sweat. There will be tears. These three years is going to be a real grind and this page will give you the best advice from both students crawling towards the finish line to experience attorneys who went through those tough battles. Whether you seek advice, maybe a little story, or just need some humor to hold your head up high, seek no further!</p>
-<i><p id="advice_message">Student? Attorney? Professor? Have something encouraging you would want to share? Send us your name, school or firm, and your content, and we'll post it here!</p></i> <p id="advice_button"><%= link_to("Say Something!", "/advices/new") %></p> 
+	<p id="advice">If you are reading this and currently attending law school, congratulations! You have a long and tough journey ahead of you. There will be sweat. There will be tears. These three years are going to be a real grind and this page will give you the best advice from both students crawling towards the finish line to experience attorneys who went through those tough battles. Whether you seek advice, maybe a little story, or just need some humor to hold your head up high, seek no further!</p>
+	<i><p id="advice_message">Student? Attorney? Professor? Have something encouraging you would want to share? Send us your name, school or firm, and your content, and we'll post it here!</p></i> <p id="advice_button"><%= link_to("Say Something!", "/advices/new") %></p> 
 
-<% @advices.each do |advice| %>
+	<% @advices.each do |advice| %>
 
-<div id="advice_center">
-	<i><p id="advice_align">
-	"<%=advice.text%>"
-	</p></i>
-	<b><p id="author_align">
-	<%=advice.author%></p></b>
-	</p>
-	<p id="author_align">
-	<%=advice.education%>
-	</p>
-	<p id="author_align">
-	<%=advice.firm%>
-	</p>
-	<p id="author_align">
-	<%=advice.created_at.strftime("%m-%d-%y")%>
-	</p>
-<div id="float_button">	
-<div id ="flag"></div>
-	<p id="delete_advice_button1"><%= link_to("Report", report_advice_path(advice.id)) %></p> 
-	
-</div>
+	<div id="advice_center">
+		<i><p id="advice_align">
+		"<%=advice.text%>"
+		</p></i>
+		<b><p id="author_align">
+		<%=advice.author%></p></b>
+		</p>
+		<p id="author_align">
+		<%=advice.education%>
+		</p>
+		<p id="author_align">
+		<%=advice.firm%>
+		</p>
+		<p id="author_align">
+		<%=advice.created_at.strftime("%m-%d-%y")%>
+		</p>
+	<div id="float_button">	
+	<div id ="flag"></div>
+		<p id="delete_advice_button1"><%= link_to("Report", report_advice_path(advice.id)) %></p> 
+		
+	</div>
+	<br>
+	<br>
 
-	</p>
-	</p>
 </div>
 
 <hr></hr>
 
 <% end %>
+
 </div>
 

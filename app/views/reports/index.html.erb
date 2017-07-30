@@ -1,11 +1,11 @@
 <div id="course_wrap">
-<p id="reported_text_title">Reported Advice</p>
+	<p id="reported_text_title">Reported Advice</p>
 
-<% @reports.each do |report| %>
+	<% @reports.each do |report| %>
 
-<p id="reported_text">
-	<b>Post# <%=report.advice_id%></b> <%= report.text %>
-</p>
+	<p id="reported_text">
+		<b>Post# <%=report.advice_id%></b> <%= report.text %>
+	</p>
 
 <% end %>
 </div>

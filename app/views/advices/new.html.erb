@@ -1,35 +1,33 @@
 <div id="course_wrap">
-<p id="our_lawyers">Say Something!</p>
-<!-- This CREATES the user...since Create corresponds to NEW -->
+	<p id="our_lawyers">Say Something!</p>
+	<div id="advice_form">
+		<p>
+		<%= form_for @advice do |form| %>   
+		<b><%= form.label :advice %></b><p> 
+		<%= form.text_area :text %>  
+		</p>
+		</p>
+		<p id="advice_space">
+		<%= form.label :author %>: 
+		<%= form.text_field :author %> 
+		</p>
+		<p id="advice_space">
+		<%= form.label :education %>: 
+		<%= form.text_field :education %> 
+		</p>
+		<p id="advice_space">
+		<%= form.label :firm %>: 
+		<%= form.text_field :firm %> 
+		</p>
 
-<div id="advice_form">
-<p>
-<%= form_for @advice do |form| %>   
-<b><%= form.label :advice %></b><p> 
-<%= form.text_area :text %>  
-</p>
-</p>
-<p id="advice_space">
-<%= form.label :author %>: 
-<%= form.text_field :author %> 
-</p>
-<p id="advice_space">
-<%= form.label :education %>: 
-<%= form.text_field :education %> 
-</p>
-<p id="advice_space">
-<%= form.label :firm %>: 
-<%= form.text_field :firm %> 
-</p>
-
-<%=@t %>
+		<%=@t %>
 
 
-<p id="advice_space">
-<%= form.submit "Speak Up!" %>
-</p>
-</div>
-<div id="padding_bottom"></div>
+		<p id="advice_space">
+		<%= form.submit "Speak Up!" %>
+		</p>
+	</div>
+	<div id="padding_bottom"></div>
 
 <% end %>
 </div>

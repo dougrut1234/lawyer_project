@@ -1,46 +1,50 @@
 <div id="course_wrap">
 <b><p id="title">Law School</p></b>
 
-<div id="margin">
+	<div id="margin">
 
 
-	<h1>Core Courses</h1>
+		<h1>Core Courses</h1>
 
 
-	<% @courses.each do |course| %>
+		<% @courses.each do |course| %>
 
-	<h2>
-		<%= link_to(course.course_name, course_path(course.id))%>
-	</h2>
-
-	<% end %> 
+		<h2>
+			<%= link_to(course.course_name, course_path(course.id))%>
+		</h2>
 
 
-	<h2 id="lawyer">
-		<i><%= link_to("Our Lawyers", "/lawyers/")%></i><br>
-	</h2>
-	<h2>
-		<i><%= link_to("Words Of Wisdom", "/advices")%></i><br>
-	</h2>
-</div>
+		<% end %> 
+		<h2>Property Law</h2>
+		<h2>Constitutional Law</h2>
+		<h2>Civil Procedure</h2>
 
-<%=image_tag "shirt.png", id: "shirt" %> 
 
-<div id="padding_bottom"></div>
-<%= link_to("Administrator Login", "/admin/login", :id => "admin")%>
+		<h2 id="lawyer">
+			<i><%= link_to("Our Lawyers", "/lawyers/")%></i><br>
+		</h2>
+		<h2>
+			<i><%= link_to("Words Of Wisdom", "/advices")%></i><br>
+		</h2>
+	</div>
 
-<p id="logout_button">
+	<%=image_tag "shirt.png", id: "shirt" %> 
 
-<% if user_signed_in? %>
-              <li>
-              <%= link_to('Logout', destroy_user_session_path, :id => 'admin', :method => :delete) %>        
-              </li>
-            <% else %>
-              <li>
-              <%= link_to('Login', new_user_session_path)  %>  
-              </li>
-</p>
-            <% end %>
+	<div id="padding_bottom"></div>
+		<%= link_to("Administrator Login", "/admin/login", :id => "admin")%>
+
+		<p id="logout_button">
+
+		<% if user_signed_in? %>
+		              <li>
+		              <%= link_to('Logout', destroy_user_session_path, :id => 'admin', :method => :delete) %> 
+		              </li>
+		    <% else %>
+		              <li>
+		              <%= link_to('Login', new_user_session_path)  %>  
+		              </li>
+		</p>
+<% end %>
 </div>
 
 

@@ -1,6 +1,7 @@
 <span id="course_wrap">
-<p id="advice">Quiz time! Just a very SMALL sample of what you'll read in the LSAT. You're going to have to be on fire with your answers. By that, you should be able to answer quickly and on your feet. Like most things in life you will be under a time crunch and this quiz is a good place to start. You'll learn to process and interpret information quickly and with that newly developed skill you'll able to succeed in the highly pressured environment of a working attorney.</p>
 
+
+	<p id="advice">Quiz time! Just a very SMALL sample of what you'll read in the LSAT. You're going to have to be on fire with your answers. By that, you should be able to answer quickly and on your feet. Like most things in life you will be under a time crunch and this quiz is a good place to start. You'll learn to process and interpret information quickly and with that newly developed skill you'll able to succeed in the highly pressured environment of a working attorney.</p>
 
 <div id="quiz">
 
@@ -13,9 +14,9 @@
 		<i><p id="answer_index" onclick="myFunction1()">Click For Answer.</p></i>
 
 		<script>
-		function myFunction1() {
-		    document.getElementById("answer_index").innerHTML = "The trainer IS NOT LIABLE, because Andy assumed the risk and gave him consent to hit him; thus it is not battery.";
-		}
+			function myFunction1() {
+			    document.getElementById("answer_index").innerHTML = "The trainer IS NOT LIABLE, because Andy assumed the risk and gave him consent to hit him; thus it is not battery.";
+			}
 		</script>
 
 	<hr></hr>
@@ -27,9 +28,9 @@
 		<i><p id="answer_index2" onclick="myFunction2()">Click For Answer.</p></i>
 
 		<script>
-		function myFunction2() {
-		    document.getElementById("answer_index2").innerHTML = "It’s ASSAULT, NOT BATTERY. Battery requires actual harm while assault can be “threatening to harm.";
-		}
+			function myFunction2() {
+			    document.getElementById("answer_index2").innerHTML = "It’s ASSAULT, NOT BATTERY. Battery requires actual harm while assault can be “threatening to harm.";
+			}
 		</script>
 
 	<hr></hr>
@@ -40,9 +41,9 @@
 		<i><p id="answer_index3" onclick="myFunction3()">Click For Answer.</p></i>
 
 		<script>
-		function myFunction3() {
-		    document.getElementById("answer_index3").innerHTML = "Farmer Dole IS LIABLE for Andy’s injuries even though the cage is locked and secure. Farmer Dole can be sued under STRICT LIABILITY as wild animals are inherently dangerous, and Farmer Dole is still at fault no matter how much care is taken.";
-		}
+			function myFunction3() {
+			    document.getElementById("answer_index3").innerHTML = "Farmer Dole IS LIABLE for Andy’s injuries even though the cage is locked and secure. Farmer Dole can be sued under STRICT LIABILITY as wild animals are inherently dangerous, and Farmer Dole is still at fault no matter how much care is taken.";
+			}
 		</script>
 
 	<hr></hr>
@@ -51,7 +52,7 @@
 	<h3 id="question_index">Andy, an employee of Fackina’s Flowers, is delivering some flowers when he found out that he has twenty minutes to kill. He could use some ice cream. He decides to drive a few miles in the other direction to the nearest ice cream store. On the way, he rear-ends another vehicle. Is he liable? If so, what does it fall under?</h3>
 
 
-		<i><p id="answer_index4" onclick="myFunction4()">Click For Answer.</p></i>
+	<i><p id="answer_index4" onclick="myFunction4()">Click For Answer.</p></i>
 		
 		<script>
 			function myFunction4() {
@@ -71,13 +72,15 @@
 				function myFunction5() {
 				    document.getElementById("answer_index5").innerHTML = "Mr. Stephenson IS NOT LIABLE, because Wayne is an independent contractor and not an employee. Wayne, as an independent contractor, is liable for his own damages as he is in control of his work, unlike that of an employee.";
 				}
-				</script>
+			</script>
 
 
 
 	<hr></hr>
 </div>
 
+<p id="times_up">TIMES UP!</p>
+<%= link_to("Restart", course_questions_path, :id => "times_up1")%>
 
 <button id="time_button_infinite" onclick="setTimeout(myFunction); setTimeout(myFunction_quiz)">UNLIMITED TIME</button>
 
@@ -87,7 +90,7 @@
 
 <button id="time_button_hard" onclick="setTimeout(myFunction_hard, 1000); setTimeout(myFunction_quiz, 1000); setTimeout(myFunction_hard_2, 11000)">HARD (30 Seconds)</button>
 
-<p id="times_up">How Did You Do?</p>
+
 
 <script>
 function myFunction() {
@@ -98,6 +101,8 @@ function myFunction() {
     var medium_button = document.getElementById("time_button_medium")
     var hard_button = document.getElementById("time_button_hard")
     var end_quiz = document.getElementById('times_up')
+    var restart = document.getElementById('times_up1')
+    restart.style.display = "none"
     quiz.style.display = "block";
     unlimited_button.style.display = "none";
     easy_button.style.display = "none";
@@ -116,12 +121,14 @@ function myFunction_easy() {
     var medium_button = document.getElementById("time_button_medium")
     var hard_button = document.getElementById("time_button_hard")
     var end_quiz = document.getElementById('times_up')
+    var restart = document.getElementById('times_up1')
     quiz.style.display = "block";
     unlimited_button.style.display = "none";
     easy_button.style.display = "none";
     medium_button.style.display = "none";
     hard_button.style.display = "none";
     end_quiz.style.display = "none";
+    restart.style.display = "none"
   
 }
 function myFunction_easy_2() {
@@ -131,12 +138,10 @@ function myFunction_easy_2() {
 	var medium_button = document.getElementById("time_button_medium")
 	var hard_button = document.getElementById("time_button_hard")
 	var end_quiz = document.getElementById('times_up')
+	var restart = document.getElementById('times_up1')
 	quiz.style.display = "none";
-	unlimited_button.style.display = "block";
-	easy_button.style.display = "block";
-	medium_button.style.display = "block";
-	hard_button.style.display = "block";
 	end_quiz.style.display = "block";
+	restart.style.display = "block";
 }
 function myFunction_medium() {
     var quiz = document.getElementById("quiz")
@@ -145,12 +150,14 @@ function myFunction_medium() {
     var medium_button = document.getElementById("time_button_medium")
     var hard_button = document.getElementById("time_button_hard")
     var end_quiz = document.getElementById('times_up')
+    var restart = document.getElementById('times_up1')
     quiz.style.display = "block";
     unlimited_button.style.display = "none";
     easy_button.style.display = "none";
     medium_button.style.display = "none";
     hard_button.style.display = "none";
     end_quiz.style.display = "none";
+    restart.style.display = "none"
 }
 function myFunction_medium_2() {
 	var quiz = document.getElementById("quiz")
@@ -159,12 +166,10 @@ function myFunction_medium_2() {
 	var medium_button = document.getElementById("time_button_medium")
 	var hard_button = document.getElementById("time_button_hard")
 	var end_quiz = document.getElementById('times_up')
+	var restart = document.getElementById('times_up1')
 	quiz.style.display = "none";
-	unlimited_button.style.display = "block";
-	easy_button.style.display = "block"
-	medium_button.style.display = "block"
-	hard_button.style.display = "block";
 	end_quiz.style.display = "block";
+	restart.style.display = "block";
 }
 function myFunction_hard() {
     var quiz = document.getElementById("quiz")
@@ -173,12 +178,14 @@ function myFunction_hard() {
     var medium_button = document.getElementById("time_button_medium")
     var hard_button = document.getElementById("time_button_hard")
     var end_quiz = document.getElementById('times_up')
+    var restart = document.getElementById('times_up1')
     quiz.style.display = "block";
     unlimited_button.style.display = "none";
     easy_button.style.display = "none";
     medium_button.style.display = "none";
     hard_button.style.display = "none";
     end_quiz.style.display = "none";
+    restart.style.display = "none"
 }
 function myFunction_hard_2() {
 	var quiz = document.getElementById("quiz")
@@ -187,19 +194,18 @@ function myFunction_hard_2() {
 	var medium_button = document.getElementById("time_button_medium")
 	var hard_button = document.getElementById("time_button_hard")
 	var end_quiz = document.getElementById('times_up')
+	var restart = document.getElementById('times_up1')
 	quiz.style.display = "none";
-	unlimited_button.style.display = "block";
-	easy_button.style.display = "block";
-	medium_button.style.display = "block";
-	hard_button.style.display = "block";
 	end_quiz.style.display = "block";
+	restart.style.display = "block";
 }
 </script>
 
 
 
-	<div id="question_index_padding"></div>
+<div id="question_index_padding"></div>
 
 
 </audio>
 </span>
+

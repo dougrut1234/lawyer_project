@@ -107,7 +107,7 @@ h2:hover {
 	margin-top: -40px;
 }
 
-#list, #list1, #list2, #list3 {
+#list1, #list2, #list3 {
 	margin-top: 30px;
 	cursor: pointer;
 	font-size: 20px;
@@ -118,8 +118,14 @@ h2:hover {
 	font-weight: bold;
 }
 
-#list:hover {
-	background-color: grey;
+#list {
+	margin-top: 30px;
+	font-size: 20px;
+	background-color: #8A0808;
+	border-radius: 25px;
+	padding: 10px; 
+	color: grey;
+	font-weight: bold;
 }
 
 #list3:hover {
